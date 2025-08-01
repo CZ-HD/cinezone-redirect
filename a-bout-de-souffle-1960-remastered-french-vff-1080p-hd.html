@@ -2,38 +2,45 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <title>Redirection...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redirection vers 1fichier</title>
     <style>
       body {
         font-family: Arial, sans-serif;
         text-align: center;
-        padding: 2em;
+        padding: 50px;
+        background: #f2f2f2;
+        color: #333;
       }
-      .btn {
+      a {
         display: inline-block;
-        background-color: #007bff;
-        color: white;
-        padding: 12px 24px;
-        font-size: 16px;
-        border-radius: 5px;
-        text-decoration: none;
         margin-top: 20px;
+        padding: 15px 25px;
+        background: #ff6600;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+      }
+      a:hover {
+        background: #e55a00;
       }
     </style>
   </head>
   <body>
-    <h2>🎬 Redirection vers le lien du film</h2>
-    <p>Si la redirection ne fonctionne pas automatiquement,<br>
-    clique sur le bouton ci-dessous 👇</p>
+    <h2>Redirection vers le lien du film…</h2>
+    <p>Si la redirection ne se fait pas automatiquement, cliquez sur le bouton ci-dessous.</p>
 
-    <a class="btn" href="https://1fichier.com/?5lgi4u78cl930co5ngur&af=5257374" target="_blank">Accéder au lien</a>
+    <!-- ✅ Ton lien 1fichier à personnaliser ici -->
+    <a href="https://1fichier.com/?5lgi4u78cl930co5ngur&af=5257374">
+      Télécharger le fichier sur 1fichier
+    </a>
 
+    <!-- ✅ Redirection automatique après 3 secondes (compatible mobile) -->
     <script>
-      // Tentative de redirection auto après 2 secondes
-      setTimeout(function () {
+      setTimeout(() => {
         window.location.href = "https://1fichier.com/?5lgi4u78cl930co5ngur&af=5257374";
-      }, 2000);
+      }, 3000);
     </script>
   </body>
 </html>
-
